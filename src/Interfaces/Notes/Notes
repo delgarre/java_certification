@@ -1,0 +1,18 @@
+1.)An interface is just the declaration of methods of an Class, its not the implementation
+2.)In an interface, we define what kind of operation an object can perform.
+These operations are defined by the classes that implement the interface
+3.)Interfaces form a contract between the class and outside world, and this contract is enforced at build time by the compiler
+4.)You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation. All methods
+in interfaces are automatically public and abstract
+5.)An interface can extend another interface
+6.)Interfaces are more flexible and can deal with a lot more stress on the design of your program than the implementation
+7.)By introducing interfaces into your program, you are really introduce points of variation at which you can plug in different implementations for that interface.
+An interfaces primary purpose is abstraction, decoupling the "what" from the "how"
+NOTE:Since Java 8 interfaces can contain default methods. In other words methods with implementation. The keyword default is used(mostly for backwards
+compatibility), and static methods as well before Java 8 that was not possible
+
+-When to use Interfaces:
+1.)You expect that unrelated classes will implement your interface. For example, the interfaces Comparable and Cloneable are implemented by many unrelated classes
+2.)You want to specify the behavior of a particular data type, but you are not concerned about who implements its behavior
+3.)You want to separate different behavior.
+4.)The collections API is an excellent example, we have the list interface and implementations ArrayList and LinkedList

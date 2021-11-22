@@ -1,0 +1,14 @@
+1.)Abstract classes are similar to interfaces. You cannot instantiate them, and they may contain a mix of methods declared with or without an implementation
+2.)However, with Abstract classes, you can declare fields that are not static and final, and define public, protected, and private concrete methods
+3.)An Abstract class can extend only one parent class but it can implement multiple interfaces
+4.)When an Abstract class is subclassed, the subclass usually provides implementations for all of the abstract methods in its parent class
+5.)However, if does not, then the subclass must also be declared abstract
+
+-When to use Abstract classes:
+1.)You want to share code among several closely related classes (Animal - with fields name, age...)
+2.)You expect classes that extend your abstract class to have many common methods or fields or required access modifiers other than public(protected, private)
+3.)You want to declare non static or non final fields (for example name, age), this enables you to define methods that can access and modify
+the state of an object(getName, setName)
+4.)When you have a requirement for your base class to provide a default implementation of certain
+methods but other methods should be open to being overridden by child classes.
+Summary: The purpose of an Abstract class is to provide a common definition of a base class that multiple derived classes can share
