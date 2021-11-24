@@ -1,0 +1,7 @@
+1.)Capitalized like class names (CamelCase)
+2.)Consider what objects implementing the interface will become of what they will be able to do
+
+Examples:
+List
+Comparable
+Serializable

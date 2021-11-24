@@ -1,0 +1,8 @@
+1.)ALL UPPER_CASE
+2.)Separate words with an underscore_
+3.)Declared using the final keyword
+
+Examples:
+static final int MAX_INT
+static final short SEVERITY_ERROR
+static final double P1= 3.141592653

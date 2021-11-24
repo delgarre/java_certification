@@ -1,0 +1,13 @@
+1.)CamelCase
+2.)Class names should be nouns (they represent things)
+3.)Should start with a capital letter
+4.)Each word in the name should start with a capital (e.g. LinkedList)
+
+Examples:
+
+ArrayList
+LinkedList
+String
+TopSong
+GearBox
+Main

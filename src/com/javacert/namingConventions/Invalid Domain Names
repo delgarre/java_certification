@@ -1,0 +1,11 @@
+1.)Replace invalid characters (i.e -) in domain name with an underscore
+2.)Domain name components starting with a number should instead start with an underscore_
+3.)Domain name components that are java keywords should have that component start with an underscore
+
+
+
+Examples with replacements:
+
+Switch.supplier.con ---------> com.supplier._switch
+1world.com ------------> com._1world
+Experts-exchange.com ----------> com.experts_exchange
