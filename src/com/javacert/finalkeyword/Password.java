@@ -1,7 +1,7 @@
 package com.javacert.finalkeyword;
 
 public class Password {
-    private static final int key = 78545165;
+    private static final int key = 785451659;
     private final int encryptedPass;
 
     public Password(int password){
@@ -10,7 +10,7 @@ public class Password {
     private int ecryptDecrypt(int password){
         return password ^ key;
     }
-    public void storePassword(){
+    public final void storePassword(){
         System.out.println("Saving password as " + this.encryptedPass);
     }
     public boolean letMeIn(int password){
