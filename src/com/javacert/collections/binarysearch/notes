@@ -1,0 +1,8 @@
+Set will work, but does not return seats in order.
+Set is a unordered collection and doesn't allow duplicates
+List is a ordered collection and does allow duplicates
+HashSet will return a unordered collection
+LinkedHashSet will return ordered collection
+Binary Search uses comparable to make searching more efficient
+Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half.
+The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n)
