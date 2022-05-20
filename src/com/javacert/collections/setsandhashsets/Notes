@@ -1,1 +1,2 @@
 Sets cannot contain duplicates
+If two objects compare equal, then they must have the same hashcode
