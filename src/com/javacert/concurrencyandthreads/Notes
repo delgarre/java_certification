@@ -1,0 +1,32 @@
+process: a unit of execution that has its own memory space
+
+Heap memory:
+
+    -If one Java application is running and we run another one, each application has its own memory space of heap. The first Java application
+    can't access the heap that belongs to the second Java application. The heap isn't shared between them. They each have their own
+
+Threads:
+
+    -A thread is a unit of execution within a process(a lightweight process).
+    -Each process can have multiple threads
+    -Every application has at least one thread
+    -Just about every process has multiple system threads that handle tasks like memory management and I/O
+    -Creating a thread doesn't require as many resources as creating a process
+    -Every thread created by a process shares the process's memory and files. This can create problems
+
+Stack Memory:
+
+    In addition to the process's memory, or heap, each thread has what's called a thread stack, which is the memory that only the thread can access.
+
+-Every Java app runs as a single process, and each process can have multiple threads. Every process has a heap, and every thread has a thread stack
+
+Why would want to use multiple threads?
+
+    -We sometimes want to perform a task that's going to take a long time We might want to query a database, or fetch data from the internet.
+    If we do this on the main thread, but the code executes in linear fashion and the main thread won't be able to do anything else while it waits
+    -An API requires us to provide one. Sometimes we have to provide the code that will run when a method we've called reaches a certain point in its execution
+
+-Concurrency
+    -Refers to an application doing more than one thing at a time. Progress can be made on more than one task
+    -An application can download a bit of data, draw part of a shape, the switch back to downloading, etc
+
