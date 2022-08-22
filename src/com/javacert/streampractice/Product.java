@@ -9,6 +9,7 @@ public class Product {
     private String name;
     private String category;
     private Double price;
+    private Double withPrice;
 
 //    @ManyToMany(mappedBy = "products")
 //    @ToString.Exclude
@@ -52,5 +53,15 @@ public class Product {
 
     public void setOrders(Set<Order> orders) {
         this.orders = orders;
+    }
+
+    public Double getWithPrice() {
+        return withPrice;
+    }
+
+    public Product setWithPrice(Double withPrice) {
+        Product product = new Product();
+        product.setPrice(withPrice);
+        return product;
     }
 }
