@@ -11,13 +11,11 @@ public class practice {
 //        This is obviously a filtering logic, the output should fulfill the two filtering requirements.
 //        So, you can apply 2 filter() operations to obtain the result.
 
-        Product product = new Product();
-        Product product2 = new Product();
-        Product product3 = new Product();
+        Product product = new Product(1,"Diary of a wimpy kid", "Books", 50.00);
 
-        product.setName("Diary of a wimpy kid");
-        product.setCategory("Books");
-        product.setPrice(50.00);
+//        product.setName("Diary of a wimpy kid");
+//        product.setCategory("Books");
+//        product.setPrice(50.00);
 //        product.setName("Goosebumps");
 //        product.setCategory("Books");
 //        product.setPrice(150.00);
@@ -39,8 +37,10 @@ public class practice {
                 .filter(p -> p.getPrice() > 100)
                 .collect(Collectors.toList());
         result.forEach(pr ->{
-            System.out.println(pr.getName());
+            System.out.println(pr.getCategory());
         });
+        //System.out.println(product.getId());
+        System.out.println(productList.size());
     }
     public static List getName(List<Product> names){
 

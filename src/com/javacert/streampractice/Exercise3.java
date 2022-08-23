@@ -12,11 +12,11 @@ public class Exercise3 {
 //        After you’ve obtained a product list with a category that belongs to “Toys” using filter(),
 //                you can then apply a 10% discount to the product price by using map().
 
-        Product product = new Product();
+        Product product = new Product(1,"Diary of a wimpy kid", "Books", 50.00);
 
-        product.setName("Diary of a wimpy kid");
-        product.setCategory("Toys");
-        product.setPrice(50.00);
+//        product.setName("Diary of a wimpy kid");
+//        product.setCategory("Toys");
+//        product.setPrice(50.00);
 
         List<Product> productList = new ArrayList<>();
 
@@ -30,6 +30,9 @@ public class Exercise3 {
 
         result.forEach(p-> {
             System.out.println(result.size());
+        });
+        productList.forEach(product1 -> {
+            product1.getCategory();
         });
     }
 }

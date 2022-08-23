@@ -4,22 +4,31 @@ import java.util.Set;
 
 public class Product {
 
-    private Long id;
+    private int id;
 
     private String name;
     private String category;
     private Double price;
     private Double withPrice;
 
-//    @ManyToMany(mappedBy = "products")
+    public Product(int id, String name, String category, Double price) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.price = price;
+        this.withPrice = withPrice;
+        this.orders = orders;
+    }
+
+    //    @ManyToMany(mappedBy = "products")
 //    @ToString.Exclude
     private Set<Order> orders;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -60,7 +69,7 @@ public class Product {
     }
 
     public Product setWithPrice(Double withPrice) {
-        Product product = new Product();
+        Product product = new Product(1, "Peace", "Toys", 5.0);
         product.setPrice(withPrice);
         return product;
     }

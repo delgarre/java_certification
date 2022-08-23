@@ -19,7 +19,7 @@ public class Exercise4 {
 //        Since product list would contain duplicated product records if multiple orders would include the same product.
 //        In order to generate a unique product list, applying distinct() operation can help to produce the unique list
 
-        Product product = new Product();
+        Product product = new Product(1,"Diary of a wimpy kid", "Books", 50.00);
         Order order = new Order();
 
 

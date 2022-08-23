@@ -17,7 +17,7 @@ public class Exercise2 {
 
         Order order = new Order();
 
-        Product product = new Product();
+        Product product = new Product(1,"Diary of a wimpy kid", "Books", 50.00);;
 
         product.setName("Diary of a wimpy kid");
         product.setCategory("Books");
