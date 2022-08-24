@@ -5,30 +5,29 @@ import java.util.Set;
 
 public class Order {
 
-    private Long id;
+    private int id;
 
     private LocalDate orderDate;
     private LocalDate deliveryDate;
     private String status;
 
-//    @ManyToOne
-//    @JoinColumn(name = "customer_id")
     private Customer customer;
 
-//    @ManyToMany
-//    @JoinTable(
-//            name = "order_product_relationship",
-//            joinColumns = { @JoinColumn(name = "order_id") },
-//            inverseJoinColumns = { @JoinColumn(name = "product_id") }
-//    )
-//    @ToString.Exclude
+
     Set<Product> products;
 
-    public Long getId() {
+    public Order(int id, LocalDate orderDate, LocalDate deliveryDate, String status) {
+        this.id = id;
+        this.orderDate = orderDate;
+        this.deliveryDate = deliveryDate;
+        this.status = status;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

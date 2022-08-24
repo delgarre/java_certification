@@ -1,5 +1,6 @@
 package com.javacert.streampractice;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -15,7 +16,9 @@ public class Exercise2 {
 //        “Baby”. Hence, the filter logic looks into the products stream of each
 //        order record and use anyMatch() to determine if any product fulfill the criteria.
 
-        Order order = new Order();
+        LocalDate orderdate1 = LocalDate.of(2017, 1, 13);
+        LocalDate deliverydate1 = LocalDate.of(2017, 1, 13);
+        Order order = new Order(1, orderdate1, deliverydate1, "delivered");
 
         Product product = new Product(1,"Diary of a wimpy kid", "Books", 50.00);;
 

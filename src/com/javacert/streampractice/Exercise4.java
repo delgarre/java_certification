@@ -20,7 +20,9 @@ public class Exercise4 {
 //        In order to generate a unique product list, applying distinct() operation can help to produce the unique list
 
         Product product = new Product(1,"Diary of a wimpy kid", "Books", 50.00);
-        Order order = new Order();
+        LocalDate orderdate1 = LocalDate.of(2017, 1, 13);
+        LocalDate deliverydate1 = LocalDate.of(2017, 1, 13);
+        Order order = new Order(1, orderdate1, deliverydate1, "delivered");
 
 
         product.setName("Diary of a wimpy kid");
