@@ -2,16 +2,22 @@ package com.javacert.streampractice;
 
 public class Customer {
 
-    private Long id;
+    private int id;
 
     private String name;
     private Integer tier;
 
-    public Long getId() {
+    public Customer(int id, String name, Integer tier) {
+        this.id = id;
+        this.name = name;
+        this.tier = tier;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
